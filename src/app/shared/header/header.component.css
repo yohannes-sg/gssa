@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+.navbar {
+  padding: 15px 20px; /* Adjust padding for a compact look */
+  box-shadow: none; /* No shadow initially */
+}
+
+.navbar .logo {
+  max-width: 200px; /* Set a max width for the logo */
+  height: 60px;
+  margin-right: auto; /* Push the logo to the left */
+}
+
+.navbar-nav {
+  margin: 0 40px; /* Center the menu with space on both sides */
+}
+
+.navbar-nav .nav-link {
+  color: #007bff; /* Primary color for links */
+  margin-left: 20px; /* Spacing between links */
+  font-weight: 500; /* Slightly bolder text */
+  transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-left: auto; /* Push social icons to the right */
+}
+
+.social-icon {
+  color: #007bff; /* Primary color for social icons */
+  margin-left: 15px; /* Space between social icons */
+  font-size: 1.2rem; /* Icon size */
+  transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.social-icon:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* Shadow on scroll */
+.fixed-top {
+  transition: box-shadow 0.3s ease; /* Transition for shadow */
+}
+
+.fixed-top.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Center text on smaller screens */
+    flex-direction: column; /* Stack menu items vertically */
+  }
+  .navbar-nav .nav-link {
+    margin: 10px 0; /* Adjust margin for mobile view */
+  }
+}

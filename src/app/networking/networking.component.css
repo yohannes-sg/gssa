@@ -1,0 +1,36 @@
+.blog-post {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .blog-post h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .blog-post h3 {
+    color: #555;
+    font-size: 20px;
+  }
+  
+  .blog-post h4 {
+    color: #777;
+    font-size: 18px;
+  }
+  
+  .blog-post p,
+  .blog-post ul {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .blog-post ul {
+    padding-left: 20px;
+  }
+  
+  .blog-post ul li {
+    margin-bottom: 10px;
+  }
+  

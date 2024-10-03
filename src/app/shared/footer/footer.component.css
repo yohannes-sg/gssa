@@ -1,0 +1,63 @@
+.footer {
+  background-color: #f8f9fa; /* Light background */
+  color: #343a40; /* Dark text color */
+}
+
+.footer-logo img {
+  max-width: 200px; /* Set logo max width */
+  height: 70px;
+}
+
+.footer h5 {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #007bff; /* Primary color for headings */
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #6c757d; /* Lighter text for footer bottom */
+}
+
+.footer p {
+  color: #495057; /* Soft text color for paragraphs */
+}
+
+/* Style for links */
+.footer a {
+  transition: color 0.3s ease;
+}
+
+.footer a.text-secondary {
+  color: #6c757d; /* Secondary link color */
+}
+
+.footer a:hover {
+  color: #007bff; /* Hover color */
+}
+
+/* Style for social media icons */
+.list-inline-item a {
+  font-size: 1.5rem; /* Larger icon size */
+  margin-right: 15px;
+  color: #6c757d; /* Social media icon color */
+  transition: color 0.3s ease;
+}
+
+.list-inline-item a:hover {
+  color: #007bff; /* Hover color for social media icons */
+}
+
+/* Ensuring the footer elements are spaced well */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center; /* Center text on smaller screens */
+  }
+}

@@ -1,0 +1,86 @@
+.about-content {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.about-text {
+  padding-right: 20px;
+  font-size: 1.2rem; /* Increased font size for readability */
+  line-height: 1.6; /* Improved line height for text spacing */
+  color: #333333; /* Slightly darker text color */
+}
+
+.about-text h2 {
+  font-size: 2rem; /* Larger heading */
+  margin-bottom: 15px; /* Space below heading */
+  font-weight: 600; /* Bold weight for emphasis */
+  color: #090e34; /* Primary color for heading */
+  text-align: center;
+}
+
+.about-text p {
+  margin-bottom: 20px; /* Space below paragraphs */
+  text-align: left; /* Justify text for clean layout */
+}
+
+.about-image img {
+  width: 100%; /* Responsive image */
+  border-radius: 10px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.companies-section {
+  margin-top: 70px; /* Space from previous section */
+  text-align: center;
+  overflow: hidden; /* Hide overflow for the moving logos */
+  position: relative; /* For positioning child elements */
+  height: 300px; /* Fixed height to match other sections */
+  width: 70%; /* Set the section width to 70% */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+.companies-container {
+  width: 100%; /* Full width for the container */
+}
+
+.company-logos {
+  display: flex; /* Flexbox for horizontal layout */
+  animation: move 10s linear infinite; /* Animation for moving logos */
+  position: absolute; /* Absolute position to allow moving logos */
+}
+
+.company {
+  flex: 0 0 auto; /* Prevent shrinking and allow natural width */
+  margin: 0 10px; /* Additional margin on the sides */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.company img {
+  width: 150px; /* Increased width for logos */
+  height: 150px; /* Uniform size for logos */
+  object-fit: contain; /* Maintain aspect ratio */
+  display: block;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.company:hover img {
+  transform: scale(1.5); /* Zoom effect on hover */
+}
+
+/* Animation for moving logos */
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(-25%); /* Move logos to the left */
+  }
+  100% {
+      transform: translateX(-100%); /* Move out of view */
+  }
+}
+
+.company-logos > .company {
+  width: 25%; /* Ensure 4 logos fit into view */
+}

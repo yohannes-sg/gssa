@@ -1,0 +1,21 @@
+.hero {
+  background-image: url('../../assets/clientImages/bg01jpg.jpg'); /* Replace with actual image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* Minimum height for the hero section */
+  color: white;
+  padding: 100px 20px;
+  margin: 0 auto; /* Centers the hero section horizontally */
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5em; /* Smaller font size for smaller screens */
+  }
+
+  .hero p {
+      font-size: 1.25em; /* Smaller font size for smaller screens */
+  }
+}
